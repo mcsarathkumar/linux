@@ -25,5 +25,7 @@ Update VM
 - `export THEATERS=abc,def,ghi` #comma separated theatre names
 
 ### Execute the nodejs app using the following command in headless false mode in puppetter
-
-- `xvfb-run --auto-servernum node index.js` executor followed by the file name
+- `tmux` opens uninterrupted session
+- `node cron_scheduler.js` executor followed by the file name
+- ctrl + b, d --> detaches the session
+- `tmux attach` to see the state of active tmux session
